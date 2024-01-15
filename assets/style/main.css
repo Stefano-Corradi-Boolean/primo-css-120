@@ -1,0 +1,80 @@
+/*
+
+Questo è un commento CSS
+
+*/
+
+/* selettore di un elemento */
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+h4{
+  color:blueviolet;
+  text-align: right;
+}
+
+/* separando più selettori con la virgola l'istruzione interessa tutti gli elementi selezionati 
+in questo caso tutti gli em e i strong sono rossi
+*/
+em, strong{
+  color: red;
+  text-decoration: underline;
+}
+
+/* selettore di un ID */
+#main-title{
+  color: red;
+}
+
+/* selettore di una classe */
+.primary{
+  color: rgb(5, 77, 5);
+  font-weight: 800;
+  text-align:center;
+}
+
+.box{
+  background-color: rgba(165, 40, 40, .8);
+  color: white;
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  font-style: italic;
+  text-align:justify;
+}
+
+.box h3{
+  text-transform: uppercase;
+}
+
+/* con lo spazio fra selettori si seleziona l'elemnto contenuto
+in questo caso solo i p figli di .box hanno note 12px
+*/
+.box p{
+  font-size: 0.8em;
+}
+
+/* mettendo più classi collegate senza spazio l'elemento deve avere tutte le classi indicate 
+in questo caso solo i .box che sono anche .little-box sno larghi 300px
+*/
+.box.little-box{
+  width: 300px;
+  height: 800px;
+}
+.box.little-box h3{
+  font-size: 50px
+}
+
+.box-image{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/bosco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-image p{
+  color: red;
+  font-weight: 800;
+}
