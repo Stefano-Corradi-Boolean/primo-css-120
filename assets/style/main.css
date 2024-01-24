@@ -147,3 +147,101 @@ in questo caso solo i .box che sono anche .little-box sno larghi 300px
   margin: 20px;
   padding-top: 25px; ;
 }
+
+
+.box-margin{
+  width: 40%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: brown;
+  border: 1px solid black;
+  color: white;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+
+.test-input{
+  background-color: yellow;
+  color: red;
+}
+
+.test-input:focus{
+  background-color: red;
+  color: yellow;
+}
+
+.cta{
+  color: red;
+}
+.cta:hover{
+  color: green;
+}
+.cta:active{
+  color: blue;
+}
+
+.box-margin.super-border{
+  border: 10px solid black;
+}
+
+.box-margin > p{
+  color: yellow;
+}
+
+.box-margin + p{
+  color: red;
+}
+
+/* seleziono solo il primo elemento  */
+.lista-1 li:first-child{
+  color: red;
+}
+
+/* seleziono solo l'ultimoelemento  */
+.lista-2 li:last-child{
+  color: red;
+}
+
+/* Seleziono solo il terzo elemento */
+.lista-3 li:nth-child(3){
+  color: red;
+}
+
+/* Seleziono solo gli elemnti pari */
+.lista-4 li:nth-child(even){
+  color: red;
+}
+
+/* Seleziono solo gli elemnti dispari */
+.lista-5 li:nth-child(odd){
+  color: red;
+}
+
+/* Seleziono solo gli elementi multipli di 3*/
+.lista-6 li:nth-child(3n){
+  color: red;
+}
+
+/* Seleziono solo gli elementi multipli di 3 partendo dal quinto elemento*/
+.lista-7 li:nth-child(3n + 5){
+  color: red;
+}
+
+.lista-8 li:nth-child(3),
+.lista-8 li:nth-child(5),
+.lista-8 li:nth-child(12){
+  color: red;
+}
+
+/* Seleziono tutti gli elementi dopo il quinto  */
+.lista-9 li:nth-child(1n + 5){
+  color: red;
+}
